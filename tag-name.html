@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeStyling(){
+            var para = document.getElementsByTagName("p")
+            para[0].style.fontSize = 25;
+            para[1].style.fontStyle = italic;
+            para[2].style.fontWeight = bolder;
+            para[3].style.color = red;
+            para[4].style.textTransform = uppercase;
+            /*for(var i=0;i<para;i++){
+                para[0].style.fontSize = 25;
+            }*/
+        }
+    </script>
+</head>
+<body>
+    <p>this is a paragraph.</p>
+    <p>this is a paragraph.</p>
+    <p>this is a paragraph.</p>
+    <p>this is a paragraph.</p>
+    <p>this is a paragraph.</p>
+    <button onclick = "changeStyling()">click</button>
+</body>
+</html>
